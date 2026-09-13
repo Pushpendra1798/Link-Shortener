@@ -10,6 +10,8 @@ app.use(express.json())
 app.use(
     cors({
         origin: "https://link-shortener-9cgdiabie-pushpendra1798s-projects.vercel.app",
+        
+        
     })
 );
 

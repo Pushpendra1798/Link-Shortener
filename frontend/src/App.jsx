@@ -163,12 +163,12 @@ const App = () => {
                     </p>
 
                     <a
-                      href={`http://localhost:3000/${url.shortCode}`}
+                      href={`https://link-shortener-vmbw.onrender.com/${url.shortCode}`}
                       target="_blank"
                       rel="noreferrer"
                       className="block truncate font-semibold text-indigo-600 hover:text-indigo-700"
                     >
-                      localhost:3000/{url.shortCode}
+                      https://link-shortener-vmbw.onrender.com/{url.shortCode}
                     </a>
                   </div>
 
