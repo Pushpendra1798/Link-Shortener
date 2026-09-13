@@ -68,13 +68,13 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 px-5 py-10 flex flex-col">
+    <div className="min-h-screen bg-slate-50 px-3 py-6 sm:px-5 sm:py-10 flex flex-col">
       <div className="mx-auto w-full max-w-5xl">
         {/* Main Card */}
-        <div className="min-h-150 rounded-3xl bg-white px-6 py-10 shadow-xl shadow-slate-200/60 sm:px-10 md:px-14">
+        <div className="min-h-150 rounded-3xl bg-white px-4 py-7 shadow-xl shadow-slate-200/60 sm:px-10 sm:py-10 md:px-14">
           {/* Heading */}
           <div className="mb-12 text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
               Link Shortener
             </h1>
 
@@ -129,7 +129,7 @@ const App = () => {
 
           {/* All Links */}
           <div className="mt-12">
-            <div className="mb-5 flex items-center justify-between">
+            <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <h2 className="text-2xl font-bold text-slate-900">All Links</h2>
 
               <span className="rounded-full bg-indigo-50 px-4 py-1.5 text-sm font-semibold text-indigo-600">
