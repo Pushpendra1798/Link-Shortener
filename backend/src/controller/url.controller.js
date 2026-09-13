@@ -9,7 +9,7 @@ export const createShortUrl = async (req, res) => {
 
         if (totalUrls >= 5) {
         return res.status(400).json({
-            message: "Maximum 10 links allowed. Please delete a link to create a new one.",
+            message: "Maximum 5 links allowed. Please delete a link to create a new one.",
         });
         }
 
