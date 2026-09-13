@@ -6,9 +6,12 @@ import cors from "cors";
 
 const app = express();
 app.use(express.json())
-app.use(cors({
-    origin:"http://localhost:5173"
-}))
+
+app.use(
+    cors({
+        origin: "https://link-shortener-9cgdiabie-pushpendra1798s-projects.vercel.app",
+    })
+);
 
 app.use("/api/url", urlRoute);
 app.get("/:shortCode", redirectToOriginalUrl);
