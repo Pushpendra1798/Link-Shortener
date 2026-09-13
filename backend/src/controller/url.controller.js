@@ -49,7 +49,7 @@ export const createShortUrl = async (req, res) => {
         return res.status(201).json({
             message: "Short URL created successfully",
             shortCode: newUrl.shortCode,
-            shortUrl: `http://localhost:3000/${newUrl.shortCode}`,
+            shortUrl: `https://link-shortener-vmbw.onrender.com/${newUrl.shortCode}`,
         });
         
     } catch (error) {
