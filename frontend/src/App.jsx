@@ -93,7 +93,7 @@ const App = () => {
               placeholder="Enter your long link here..."
               value={originalUrl}
               onChange={(e) => setOriginalUrl(e.target.value)}
-              className="h-14 flex-1 rounded-xl border border-slate-200 bg-white px-5 text-slate-800 outline-none placeholder:text-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+              className="h-14 flex-1 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-slate-800 outline-none placeholder:text-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
             /> 
 
             <button
