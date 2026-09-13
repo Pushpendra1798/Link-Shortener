@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(
     cors({
-        origin: "https://link-shortener-one-ivory.vercel.app",
+        origin: "https://link-shortener-rfftp7l2d-pushpendra1798s-projects.vercel.app",
     })
 );
 
