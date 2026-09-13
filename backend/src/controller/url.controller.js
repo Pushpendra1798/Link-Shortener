@@ -5,6 +5,16 @@ export const createShortUrl = async (req, res) => {
     try {
         const { originalUrl } = req.body;
 
+        const totalUrls = await urlModel.countDocuments();
+
+        if (totalUrls >= 5) {
+        return res.status(400).json({
+            message: "Maximum 10 links allowed. Please delete a link to create a new one.",
+        });
+        }
+
+
+
         if (!originalUrl || !originalUrl.trim()) {
             return res.status(400).json({
                 message: "Please enter a URL",
